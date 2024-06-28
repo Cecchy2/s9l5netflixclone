@@ -3,8 +3,8 @@ import { Col, Row, Spinner } from "react-bootstrap";
 import SingleMovie from "./SingleMovie";
 
 const starWars = "http://www.omdbapi.com/?apikey=64766599&s=star wars";
-const gameOfThrones = "http://www.omdbapi.com/?apikey=64766599&s=game of thrones";
-const betterCallSaul = "http://www.omdbapi.com/?apikey=64766599&s=better call saul";
+const piratesOfCaribbean = "http://www.omdbapi.com/?apikey=64766599&s=Pirates of the Caribbean";
+const backToTheFuture = "http://www.omdbapi.com/?apikey=64766599&s=back to the future";
 
 class Galleria extends Component {
   state = {
@@ -38,7 +38,7 @@ class Galleria extends Component {
 
   FetchMovies2 = async () => {
     try {
-      const resp = await fetch(gameOfThrones);
+      const resp = await fetch(piratesOfCaribbean);
       if (resp.ok) {
         const data = await resp.json();
         if (data.Search) {
@@ -52,7 +52,7 @@ class Galleria extends Component {
 
   FetchMovies3 = async () => {
     try {
-      const resp = await fetch(betterCallSaul);
+      const resp = await fetch(backToTheFuture);
       if (resp.ok) {
         const data = await resp.json();
         if (data.Search) {
@@ -82,7 +82,7 @@ class Galleria extends Component {
             ))}
           </Row>
         )}
-        <h5 className="text-white mt-2 text-start">Guarda Game of Thrones</h5>
+        <h5 className="text-white mt-2 text-start">Guarda Pirates of the Caribbean</h5>
         {loading2 ? (
           <Spinner animation="border" variant="light" />
         ) : (
@@ -94,7 +94,7 @@ class Galleria extends Component {
             ))}
           </Row>
         )}
-        <h5 className="text-white  text-start">Continua a guardare Better Call Saul </h5>
+        <h5 className="text-white  text-start">Continua a guardare Back to the Future</h5>
         {loading3 ? (
           <Spinner animation="border" variant="light" />
         ) : (
