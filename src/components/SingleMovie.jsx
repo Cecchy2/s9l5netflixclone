@@ -7,7 +7,7 @@ const SingleMovie = ({ movie }) => (
       <Card.Img src={movie.Poster} alt={movie.Title} />
     </Card>
     <div className="movie-info">
-      <Card.Title>{movie.Title}</Card.Title>
+      <Card.Title className="fs-6 mb-3 text-warning">{movie.Title}</Card.Title>
     </div>
   </div>
 );
