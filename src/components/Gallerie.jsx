@@ -75,7 +75,7 @@ class Galleria extends Component {
             </Col>
           ))}
         </Row>
-        <h5 className="text-white mt-4 text-start">Guarda Game of Thrones</h5>
+        <h5 className="text-white mt-2 text-start">Guarda Game of Thrones</h5>
         <Row>
           {movies2.slice(0, 6).map((movie) => (
             <Col key={movie.imdbID} className="text-white overflow-hidden" mb={7}>
@@ -83,7 +83,7 @@ class Galleria extends Component {
             </Col>
           ))}
         </Row>
-        <h5 className="text-white mt-4 text-start">Continua a guardare Better Call Saul </h5>
+        <h5 className="text-white  text-start">Continua a guardare Better Call Saul </h5>
         <Row>
           {movies3.slice(0, 6).map((movie) => (
             <Col key={movie.imdbID} className="text-white overflow-hidden" mb={5}>
