@@ -53,7 +53,7 @@ const MyNavBar = () => {
               >
                 <NavDropdown.Item href="#action/3.3">Setting</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">User</NavDropdown.Item>
+                <NavDropdown.Item href="../../User.jsx">User</NavDropdown.Item>
               </NavDropdown>
             </div>
           </div>
