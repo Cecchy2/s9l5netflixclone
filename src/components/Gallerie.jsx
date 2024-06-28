@@ -82,7 +82,7 @@ class Galleria extends Component {
             ))}
           </Row>
         )}
-        <h5 className="text-white mt-2 text-start">Guarda Pirates of the Caribbean</h5>
+        <h5 className="text-white text-start">Guarda Pirates of the Caribbean</h5>
         {loading2 ? (
           <Spinner animation="border" variant="light" />
         ) : (
