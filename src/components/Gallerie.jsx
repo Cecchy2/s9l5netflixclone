@@ -66,7 +66,7 @@ class Galleria extends Component {
 
     console.log(movies1);
     return (
-      <Container>
+      <>
         <h5 className="text-white mt-4 text-start">Guarda la saga di Star Wars</h5>
         <Row>
           {movies1.slice(0, 6).map((movie) => (
@@ -91,7 +91,7 @@ class Galleria extends Component {
             </Col>
           ))}
         </Row>
-      </Container>
+      </>
     );
   }
 }
