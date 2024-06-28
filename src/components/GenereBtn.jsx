@@ -8,7 +8,7 @@ const GenereBtn = () => {
         <h3 className="fs-5 text-white me-3">TV Shows</h3>
         <Dropdown as={ButtonGroup}>
           <Button variant="secondary" size="sm">
-            Genre
+            Genere
           </Button>
 
           <Dropdown.Toggle split variant="secondary" id="dropdown-split-basic" size="sm" />
