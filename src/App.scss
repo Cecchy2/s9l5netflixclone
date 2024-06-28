@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.movie-container {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.movie-container:hover {
+  transform: scale(1.1);
+}
+
+.movie-info {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movie-container:hover .movie-info {
+  opacity: 1;
+}
