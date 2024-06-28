@@ -26,9 +26,9 @@ class Galleria extends Component {
     try {
       const resp = await fetch(starWars);
       if (resp.ok) {
-        const data = await resp.json();
-        if (data.Search) {
-          this.setState({ movies1: data.Search, loading1: false });
+        const movies1 = await resp.json();
+        if (movies1.Search) {
+          this.setState({ movies1: movies1.Search, loading1: false });
         }
       }
     } catch (err) {
@@ -40,9 +40,9 @@ class Galleria extends Component {
     try {
       const resp = await fetch(piratesOfCaribbean);
       if (resp.ok) {
-        const data = await resp.json();
-        if (data.Search) {
-          this.setState({ movies2: data.Search, loading2: false });
+        const movies2 = await resp.json();
+        if (movies2.Search) {
+          this.setState({ movies2: movies2.Search, loading2: false });
         }
       }
     } catch (err) {
@@ -54,9 +54,9 @@ class Galleria extends Component {
     try {
       const resp = await fetch(backToTheFuture);
       if (resp.ok) {
-        const data = await resp.json();
-        if (data.Search) {
-          this.setState({ movies3: data.Search, loading3: false });
+        const movies3 = await resp.json();
+        if (movies3.Search) {
+          this.setState({ movies3: movies3.Search, loading3: false });
         }
       }
     } catch (err) {
